@@ -97,13 +97,14 @@ for (let i = 1; i <= totalFotos; i++) {
                     <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">
                         Jésica & Carlos
                     </h1>
-
-                    <div class="d-inline-block border-top border-bottom border-light py-3 px-4" style="margin-top: 525px;">
-                        <h3 class="text-uppercase font-weight-normal text-white m-0"
-                            style="letter-spacing: 2px;">
-                            <span>&#8595;</span>Apúntate aquí<span>&#8595;</span>
-                        </h3>
-                    </div>
+					<a href="#formulario-registro" class="nav-item nav-link d-inline-block p-0 text-decoration-none">
+						<div class="d-inline-block border-top border-bottom border-light py-3 px-4" style="margin-top: 525px;">
+							<h3 class="text-uppercase font-weight-normal text-white m-0"
+								style="letter-spacing: 2px;">
+								<span>&#8595;</span>Apúntate aquí<span>&#8595;</span>
+							</h3>
+						</div>
+					</a>
                 </div>
             </div>
         </div>
@@ -116,7 +117,7 @@ document.getElementById('carousel-content').innerHTML = html;
     <source src="music/streaming.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>-->
-<div class="google-form-container">
+<div class="google-form-container" id="formulario-registro">
     <iframe 
         src="https://docs.google.com/forms/d/e/1FAIpQLSf6mQ8sC1EjRXv6ejt_YSP0vvVKMA5rvPKnuRGZCblFN8NfBg/viewform?embedded=true" 
         style="width: 100%; height: 80vh; border: none;"
