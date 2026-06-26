@@ -81,7 +81,7 @@
 </div>
 
 <script>
-const totalFotos = 23;
+const totalFotos = 24;
 let html = '';
 
 for (let i = 1; i <= totalFotos; i++) {
@@ -92,16 +92,16 @@ for (let i = 1; i <= totalFotos; i++) {
                  src="img/carousel-${i}.jpg"
                  style="object-fit: cover;">
 
-            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="margin-top: 500px>
                 <div class="p-3" style="max-width: 900px;">
                     <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">
                         Jésica & Carlos
                     </h1>
 
-                    <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                    <div class="d-inline-block border-top border-bottom border-light py-3 px-4" style="margin-top: 600px;">
                         <h3 class="text-uppercase font-weight-normal text-white m-0"
                             style="letter-spacing: 2px;">
-                            Vamos, vamos, ¡qué nos casamos!
+                            <span>&#8595;</span>Apúntate aquí<span>&#8595;</span>
                         </h3>
                     </div>
                 </div>
@@ -166,12 +166,6 @@ document.getElementById('carousel-content').innerHTML = html;
                         <h3 class="mb-3">Carlos</h3>
                         <p>Carlos es un malagueño muy hablador amante de los cacharros electrónicos. Ha conseguido juntar sus dos pasiones y ahora mismo se le permite dar la chapa a los alumnos de teleco de la universidad Politécnica de Madrid. Esta boda es la oportunidad perfecta de estar con él sin que pueda aburriros demasiado.</p>
                         <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Carlos</h3>
-                        <div class="position-relative">
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 p-0" style="min-height: 400px;">
@@ -187,12 +181,6 @@ document.getElementById('carousel-content').innerHTML = html;
                         <h3 class="mb-3">Jésica</h3>
                         <p>Jésica es una malagueña de las chapas amante de los gatos y de los animales en general. Es una muchacha alegre con multitud de actividades: escritura, pintura, manualidades, decoración... También, y muy a su pesar, trabaja en Madrid, pero la boda es un día alegre y no vamos a hablar de eso :).</p>
                         <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Jésica</h3>
-                        <div class="position-relative">
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -304,14 +292,14 @@ document.getElementById('carousel-content').innerHTML = html;
         <div class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Familia</h6>
-                <h1 class="font-secondary display-4">Padrinos & Damas de Honor</h1>
+                <h1 class="font-secondary display-4">Personalidades Destacadas</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
                     <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".first">Padrinos</li>
-                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".second">Damas de Honor</li>
+                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".first">Por parte de Carlos</li>
+                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".second">Por parte de Jésica</li>
                     </ul>
                 </div>
             </div>
