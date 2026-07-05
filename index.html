@@ -24,11 +24,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-<!--    <audio autoplay src="/music/streaming.mp3" controls>
-<p>If you are reading this, it is because your browser does not support the audio element.</p>
-</audio>
 </head>
--->
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
@@ -81,10 +77,10 @@
 </div>
 
 <script>
-const totalFotos = 24;
+const totalFotos = 27;
 let html = '';
 
-for (let i = 1; i <= totalFotos; i++) {
+for (let i = 1; i < totalFotos; i++) {
     html += `
         <div class="carousel-item position-relative ${i === 1 ? 'active' : ''}"
              style="height: 100vh; min-height: 400px;">
@@ -97,7 +93,7 @@ for (let i = 1; i <= totalFotos; i++) {
                     <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">
                         Jésica & Carlos
                     </h1>
-					<a href="#formulario-registro" class="nav-item nav-link d-inline-block p-0 text-decoration-none">
+					<a href="#formulario-registro" onclick="document.getElementById('musica').play();" class="nav-item nav-link d-inline-block p-0 text-decoration-none">
 						<div class="d-inline-block border-top border-bottom border-light py-3 px-4" style="margin-top: 525px;">
 							<h3 class="text-uppercase font-weight-normal text-white m-0"
 								style="letter-spacing: 2px;">
@@ -113,10 +109,10 @@ for (let i = 1; i <= totalFotos; i++) {
 
 document.getElementById('carousel-content').innerHTML = html;
 </script>
-<!--<audio controls autoplay>
+<audio controls id="musica" >
     <source src="music/streaming.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
-</audio>-->
+</audio>
 <div class="google-form-container" id="formulario-registro">
     <iframe 
         src="https://docs.google.com/forms/d/e/1FAIpQLSf6mQ8sC1EjRXv6ejt_YSP0vvVKMA5rvPKnuRGZCblFN8NfBg/viewform?embedded=true" 
@@ -165,8 +161,8 @@ document.getElementById('carousel-content').innerHTML = html;
                 <div class="col-md-6 p-0 text-center text-md-right">
                     <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
                         <h3 class="mb-3">Carlos</h3>
-                        <p>Carlos es un malagueño muy hablador amante de los cacharros electrónicos. Ha conseguido juntar sus dos pasiones y ahora mismo se le permite dar la chapa a los alumnos de teleco de la universidad Politécnica de Madrid. Esta boda es la oportunidad perfecta de estar con él sin que pueda aburriros demasiado.</p>
-                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Carlos</h3>
+                        <p>Carlos es un malagueño muy hablador amante de los cacharros electrónicos. Ha conseguido juntar sus dos pasiones y ahora mismo se le permite dar la chapa a los alumnos de teleco de la Universidad Politécnica de Madrid. Esta boda es la oportunidad perfecta de estar con él sin que pueda aburriros demasiado.</p>
+                       <!--  <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Carlos</h3> -->
                     </div>
                 </div>
                 <div class="col-md-6 p-0" style="min-height: 400px;">
@@ -180,8 +176,8 @@ document.getElementById('carousel-content').innerHTML = html;
                 <div class="col-md-6 p-0 text-center text-md-left">
                     <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
                         <h3 class="mb-3">Jésica</h3>
-                        <p>Jésica es una malagueña de las chapas amante de los gatos y de los animales en general. Es una muchacha alegre con multitud de actividades: escritura, pintura, manualidades, decoración... También, y muy a su pesar, trabaja en Madrid, pero la boda es un día alegre y no vamos a hablar de eso :).</p>
-                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Jésica</h3>
+                        <p>Jésica es una contable de Málaga extraviada en Madrid. Adicta a los videojuegos cozy donde nadie la estresa, pero en la discoteca se transforma y baila Bad Bunny como si hubiera tomado por la mañana café y por la tarde ron. No dudes en debatir con ella qué fruta del diablo de One Piece es la mejor.</p>
+                      <!--  <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Jésica</h3>-->
                     </div>
                 </div>
             </div>
@@ -207,7 +203,7 @@ document.getElementById('carousel-content').innerHTML = html;
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">Hace mucho mucho tiempo...</h4>
                             <p class="text-uppercase mb-2">2007</p>
-                            <p class="m-0">Jésica y Carlos se conocen desde hace muchos años, allá por 2007 solían quedar muchos domingos para ver el último superviviente en casa de Carlos.</p>
+                            <p class="m-0">Nos conocemos desde hace muchos años. Allá por 2007 solíamos quedar muchos domingos para ver El Ultimo Superviviente en casa de Carlos.</p>
                         </div>
                     </div>
                 </div>
@@ -216,7 +212,7 @@ document.getElementById('carousel-content').innerHTML = html;
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
                             <h4 class="mb-2">Año nuevo, vida nueva</h4>
                             <p class="text-uppercase mb-2">01 Enero 2019</p>
-                            <p class="m-0">Ya en 2019 empezamos el año siendo algo más que amigos, yo volví a Madrid después de esas vacaciones y ella quedó en Málaga...</p>
+                            <p class="m-0">Ya en 2019 empezamos el año siendo algo más que amigos, Carlos volvió a Madrid después de esas vacaciones y Jésica tuvo que quedarse en Málaga...</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
@@ -231,7 +227,7 @@ document.getElementById('carousel-content').innerHTML = html;
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">Vida en Madrid</h4>
                             <p class="text-uppercase mb-2">2019</p>
-                            <p class="m-0">En Marzo de 2019 nos fuimos a Asturias por semana santa, y, al volver, Jésica se encontró con un trabajo en Madrid. Desde que vino, hemos estado viviendo juntos en: Cuesta San Vicente, Arturo Soria (COVID mediante), Separados Málaga-Madrid, Barrio del Pilar y Villalba... </p>
+                            <p class="m-0">En marzo de 2019 nos fuimos a Asturias por Semana Santa, y, al volver, Jésica se encontró con un trabajo en Madrid. Desde que vino, hemos estado viviendo juntos en: Cuesta San Vicente, Arturo Soria (COVID mediante), separados :(, Málaga-Madrid, Barrio del Pilar y Villalba... </p>
                         </div>
                     </div>
                 </div>
@@ -240,7 +236,7 @@ document.getElementById('carousel-content').innerHTML = html;
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
                             <h4 class="mb-2">Propuesta</h4>
                             <p class="text-uppercase mb-2"></p>
-                            <p class="m-0">El 20 de agosto de 2025 se produjo el milagro, pudimos escaparnos a Ronda. Frente al imponente paisaje de la noche sobre garganta del tajo, algún trovador itinerante comenzó a endulzar la noche con la melodía de una guitarra. Fue entonces, cuando tras fundirse en un abrazo frente a la garganta y junto a la música, que Carlos posó su rodilla en el suelo con un anillo sostenido a la altura de su pecho. El desenlace de dicha historia es evidente dada la existencia de esta web :)</p>
+                            <p class="m-0">El 20 de agosto de 2025 se produjo el milagro: pudimos escaparnos a Ronda. Frente al imponente paisaje nocturno sobre del Tajo, un trovador itinerante comenzó a endulzar la noche con la melodía de una guitarra. Fue entonces, cuando tras fundirse en un abrazo frente a la garganta y junto a la música, que Carlos posó su rodilla en el suelo con un anillo sostenido a la altura de su pecho. El desenlace de dicha historia es evidente dada la existencia de esta web :)</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
@@ -287,7 +283,7 @@ document.getElementById('carousel-content').innerHTML = html;
                         <h4 class="mb-3">Horario Tentativo</h4>
                         <p class="mb-0">12:30 Ceremonia</p>
                         <p class="mb-0">13:30 Cóctel cena etc etc</p>
-                        <p class="mb-0">15:30 Comida</p>
+                        <p class="mb-0">15:30 Almuerzo</p>
                         <p class="mb-0">17:30 !!!FIESTA!!!</p>
                     </div>
                 </div>
@@ -297,7 +293,7 @@ document.getElementById('carousel-content').innerHTML = html;
     <!-- Event End -->
 
 
-    <!-- Friends & Family Start -->
+    <!-- Friends & Family Start 
     <div class="container-fluid py-5" id="family">
         <div class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
@@ -381,6 +377,82 @@ document.getElementById('carousel-content').innerHTML = html;
     </div>
     <!-- Friends & Family End -->
     <!-- Gallery Start -->
+	
+	<!-- Friends & Family Start -->
+<div class="container-fluid py-5" id="family">
+    <div class="container pt-5 pb-3">
+        <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Familia</h6>
+            <h1 class="font-secondary display-4">Personalidades Destacadas</h1>
+            <i class="far fa-heart text-dark"></i>
+        </div>
+
+        <div class="row portfolio-container">
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/Joseluirs.jpeg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">José Luis</h4>
+                        <p class="text-uppercase">Padre del novio</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/felix.jpg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Félix</h4>
+                        <p class="text-uppercase">Padre de la novia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/geles.jpg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Geles</h4>
+                        <p class="text-uppercase">Madre de la novia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/mamacar.jpeg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Alicia del Carmen</h4>
+                        <p class="text-uppercase">Madre del novio</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/vistrol.jpeg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Víctor</h4>
+                        <p class="text-uppercase">Hermano del novio</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/gallery.jpg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Képler</h4>
+                        <p class="text-uppercase">El diablo</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Friends & Family End -->
     <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
         <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
             <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galería</h6>
@@ -395,7 +467,7 @@ document.getElementById('carousel-content').innerHTML = html;
 <script>
 html = '';
 
-for (let i = 1; i <= totalFotos; i++) {
+for (let i = 1; i < totalFotos; i++) {
     html += `
         <div class="gallery-item">
                 <img class="img-fluid w-100" src="img/carousel-${i}.jpg" alt="">
