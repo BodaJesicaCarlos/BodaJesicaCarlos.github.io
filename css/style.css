@@ -5914,12 +5914,13 @@ a.close.disabled {
 
 .carousel-control-prev,
 .carousel-control-next {
+  align-items: flex-end;
+  padding-bottom: 190px;
   position: absolute;
   top: 0;
   bottom: 0;
   z-index: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 15%;
   color: #fff;
@@ -9762,10 +9763,4 @@ a.text-dark:hover, a.text-dark:focus {
   #event .border-right {
     border-right: none !important;
   }
-}
-
-.carousel-control-prev,
-.carousel-control-next{
-    align-items: flex-end;
-    padding-bottom: 190px;
 }
