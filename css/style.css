@@ -9763,3 +9763,9 @@ a.text-dark:hover, a.text-dark:focus {
     border-right: none !important;
   }
 }
+
+.carousel-control-prev,
+.carousel-control-next{
+    align-items: flex-end;
+    padding-bottom: 190px;
+}
